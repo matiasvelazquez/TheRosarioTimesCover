@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>The Rosario Times</title>
+        <link rel="stylesheet" href="./CSS/body.css">
+        <link rel="stylesheet" href="./CSS/header.css">
+        <link rel="stylesheet" href="./CSS/subscription.css">
+        <link rel="stylesheet" href="./CSS/section1.css">
+        <link rel="stylesheet" href="./CSS/footer.css">
+        <link rel="stylesheet" href="./CSS/normalize.css">
+        <script src="./JS/validation.js"></script>
+    </head>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="name">
+                    <h1 id="h1">the <i><span class="highlight">rosario</span></i> times</h1>
+                </div>
+                <div class="nav">
+                <nav>
+                    <ul>
+                        <li class="current"><a href="index.html">home</a></li>
+                        <li class="current"><a href="index.html">city</a></li>
+                        <li class="current"><a href="index.html">culture</a></li>
+                        <li class="current"><a href="index.html">sports</a></li>
+                        <li class="current"><a href="subscription.html">subscription</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="section1">
+            <div class="container">
+                <div class="menu">
+                    <a href="index.html">
+                        <img src="./Images/menu.png" alt="">
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="index.html">
+                        <img src="./Images/instagram.png" alt="">
+                    </a>
+                    <a href="index.html">
+                        <img src="./Images/facebook.png" alt="">
+                    </a>
+                    <a href="index.html">
+                        <img src="./Images/twitter.png" alt="">
+                    </a>
+                </div>
+                <div class="search-logo">
+                    <a href="index.html">
+                        <img src="./Images/search.png" alt="">
+                    </a>
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="search" placeholder="">
+                        <button type="submit" class="button">search</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscription">
+            <form action="action_page.php" style="border:1px solid #ccc">
+                <div class="container2">
+                    <h3>
+                      Subscription
+                    </h3>
+                    <h4>
+                      Please fill in this form to create an account.
+                    </h4>
+                    <hr>
+                    <div class="labelandinput">
+                        <label for="name"><b>Full name</b></label>
+                        <input id="nameinput" type="text" placeholder="Enter Full Name" name="name" required onfocus="namefocus(nameinput)" onblur="namevalidation(nameinput,nameinput.value)">
+                        <p id="p1">(*)The name should have at least 6 characters</p>
+                        <p id="p2">(*) You should leave a space between names</p>
+                    </div>
+                    <div class="labelandinput">
+                        <label for="email"><b>Email</b></label>
+                        <input id="emailinput" type="text" placeholder="Enter Email" name="email" required onfocus="emailfocus(emailinput)" onblur="emailvalidation(emailinput,emailinput.value)">
+                        <p id="p3">(*)Insert a correct e-mail format</p>
+                    </div>
+                    <div class="labelandinput">
+                        <label for="psw"><b>Password</b></label>
+                        <input id="passwordinput" type="password" placeholder="Enter Password" name="psw" required onfocus="passwordfocus(passwordinput)" onblur="passwordvalidation(passwordinput,passwordinput.value)">
+                        <p id="p4">(*)The password should contain at least 8 characters</p>
+                    </div>
+                    <div class="labelandinput">
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input id="rptpasswordinput" type="password" placeholder="Repeat Password" name="psw-repeat" required onfocus="rptpasswordfocus(rptpasswordinput)" onblur="rptpasswordvalidation(rptpasswordinput,rptpasswordinput.value,passwordinput.value)">
+                        <p id="p5">(*)The passwords doesn't match</p>
+                    </div>
+                    <div class="labelandinput">
+                        <label for="age"><b>Age</b></label>
+                        <input id="ageinput" type="number" placeholder="Enter Age" name="age" required onfocus="agefocus(ageinput)" onblur="agevalidation(ageinput,ageinput.value)">
+                        <p id="p6">(*)You should be at least 18 in order to subscribe to our page</p>
+                    </div>
+                    <div class="labelandinput">
+                        <label for="phone"><b>Phone Number</b></label>
+                        <input id="phoneinput" type="phone" placeholder="Enter Phone Number" name="phone" required onfocus="phonefocus(phoneinput)" onblur="phonevalidation(phoneinput,phoneinput.value)">
+                        <p id="p7">(*)The Phone number must conatin at least 7 numbers</p>
+                        <p id="p8">(*)The number must contain only numbers</p>
+                    </div>
+                    <div class="labelandinput">
+                        <label for="address"><b>Address</b></label>
+                        <input id="addressinput" type="address" placeholder="Enter Address" name="address" required onfocus="addressfocus(addressinput)" onblur="addressvalidation(addressinput,addressinput.value)">
+                        <p id="p9">(*)The address must contain at least 5 characters</p>
+                        <p id="p10">(*)You should leave a space in between</p>
+                    </div>
+                    <div class="labelandinput">
+                        <label for="city"><b>City</b></label>
+                        <input id="cityinput" type="text" placeholder="Enter City" name="city" required onfocus="cityfocus(cityinput)" onblur="cityvalidation(cityinput,cityinput.value)">
+                        <p id="p11">(*)The city's name must contain at least 3 characters</p>
+                    </div>
+                    <div class="labelandinput">
+                        <label for="zipcode"><b>Zip Code</b></label>
+                        <input id="zipcodeinput" type="text" placeholder="Enter Zip Code" name="zipcode" required onfocus="zipcodefocus(zipcodeinput)" onblur="zipcodevalidation(zipcodeinput,zipcodeinput.value)">
+                        <p id="p12">(*)The zip code must contain at least 3 characters</p>
+                    </div>
+                    <div class="labelandinput">
+                        <label for="id"><b>ID</b></label>
+                        <input id="idinput" type="id" placeholder="Enter ID" name="id" required onfocus="idfocus(idinput)" onblur="idvalidation(idinput,idinput.value)">
+                        <p id="p13">(*)The ID must contain between 7 and 8 digits</p>
+                    </div>
+                    <div class="subbtn">
+                        <button type="submit" class="subscribebtn" onclick="buttonvalidation()">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p>
+                the rosario times &copy; 2020
+            </p>
+        </footer>
+
+    </body>
+</html>

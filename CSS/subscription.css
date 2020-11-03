@@ -1,0 +1,132 @@
+.subscription {
+    display: flex;
+    justify-content: center;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+.subscription h3 {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subscription h4 {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.labelandinput {
+    display: flex;
+    justify-content: flex-start;
+    width: 45%;
+    margin: 10px 40px 10px 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-transform: uppercase;
+    width: 30%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+  input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: flex-start;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    width: 50%;
+    border: none;
+    background: #f1f1f1;
+    margin-right: 20px;
+}
+
+.subscription hr {
+  border: 3px solid #f1f1f1;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.subscription .subbtn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.subscription .subscribebtn {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    background: black;
+    color: white;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.subscription .subscribebtn:hover {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+@media(max-width:768px) {
+  .labelandinput {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 40px 10px 0;
+  }
+  
+
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-transform: uppercase;
+    width: 30%;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: flex-start;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    width: 70%;
+    border: none;
+    background: #f1f1f1;
+  }
+}
+
+p {
+  display: flex;
+  justify-content: flex-start;
+  color: red;
+  display: none;
+  width: 20%;
+}
